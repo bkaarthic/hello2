@@ -27,6 +27,11 @@ pipeline {
                 echo "successfully deployed in production"
             }
         }
+        stage('deploying in production') {
+            steps {
+                echo "deplyed by cory"
+            }
+        }
     }
     post {
         success {
