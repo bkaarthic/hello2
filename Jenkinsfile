@@ -31,6 +31,11 @@ pipeline {
                 echo "successfully deployed in production"
             }
         }
+        stage('deploying in production') {
+            steps {
+                echo "deplying in sneha"
+            }
+        }
     }
     post {
         success {
