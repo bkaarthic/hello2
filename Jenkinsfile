@@ -29,7 +29,12 @@ pipeline {
         }
         stage('deploying in production') {
             steps {
-                echo "deplyed by cory"
+                echo "deplying in cory"
+            }
+        }
+        stage('deploying in production') {
+            steps {
+                echo "deplying in sneha"
             }
         }
     }
