@@ -9,7 +9,7 @@ pipeline {
                 sh "mvn clean install"
             }
         }
-       
+       added by cory
         stage('docker container') {
             steps {
                 sh "docker run -d --name tommy -p 8090:8080 mytom"
