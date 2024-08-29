@@ -9,11 +9,7 @@ pipeline {
                 sh "mvn clean install"
             }
         }
-        stage('docker image') {
-            steps {
-                sh "docker build -t mytom /var/lib/jenkins/workspace/demo"
-            }
-        }
+       added by cory
         stage('docker container') {
             steps {
                 sh "docker run -d --name tommy -p 8090:8080 mytom"
@@ -29,6 +25,11 @@ pipeline {
         stage('deploying in production') {
             steps {
                 echo "successfully deployed in production"
+            }
+        }
+        stage('deploying in production') {
+            steps {
+                echo "deplying in cory"
             }
         }
         stage('deploying in production') {
